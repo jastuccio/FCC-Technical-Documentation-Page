@@ -1,0 +1,54 @@
+//GLOBAL RESET
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  // this defines what 1rem equals
+
+  font-size: 62.5%; // 1 rem = 10px; 10px/16px = 62.5%
+
+  @include respond(phone) {
+    font-size: 75%; // 1rem = 12px, 12/16 = .75
+  }
+  // this query also covers the phone
+  @include respond(tab-port) {
+    font-size: 75%; // 1rem = 12px, 12/16 = .75
+  }
+
+  @include respond(tab-land) {
+    font-size: 100%; // 1rem = 16px
+  }
+}
+
+body {
+  box-sizing: border-box;
+  font-family: $font-primary;
+  background-color: $color-white;
+  color: $color-black;
+  font-weight: 300;
+  line-height: 1.6;
+}
+
+.content {
+  display: grid;
+  max-width: 1000px;
+  margin: 1rem 3rem;
+
+  @include respond(phone) {
+    margin: 30rem 5vw;
+  }
+}
+
+ul {
+  list-style-type: "-";
+}
+
+li {
+  text-decoration: none;
+  margin-left: 2rem;
+}
