@@ -11,33 +11,46 @@
 </head>
 
 <body>
-  <div class="wrapper">
-    <nav id="navbar">
-      <div class="nav-wrapper">
-        <h2>JS the Weird Parts</h2>
+  <!-- <div class="wrapper"> -->
+  <nav id="navbar" class="nav">
+    <header>
+      <h2>JS the Weird Parts</h2>
+    </header>
 
-        <!-- set up js to loop through the h3 tags and automatically create the menu -->
-        <ul>
-          <li>
-          <a href="#/syntax-parsers">
-            <h3>5 syntax parsers, execution contexts, lexical environments</h3>
-          </a></li>
-          <li>
-          <a href="#/6"><li><h3>6 name/value pairs and objects</h3></a></li>
-          <li>
-          <a href="#7"><h3>7 The Global Environment & the Global Object</h3></a></li>
-        </ul>
-      </div>
-    </nav>
-<main class="content" id="main-doc">
-  <h1>II Execution contexts and lexical environments</h1>
-    <article>
-      <!-- //h2 stays on top until the next section starts and then it is replaced by the next h2 tag -->
-
-      <section class="main-section" id="5_syntax_parsers_execution_contexts_lexical_environments">
-        <header>
+    <!-- set up js to loop through the h3 tags and automatically create the menu -->
+    <ul>
+      <li>
+        <a href="#5_syntax_parsers_execution_contexts_lexical_environments" class="nav-link">5 syntax parsers execution contexts lexical environments
+          </a>
+      </li>
+      <li>
+        <a href="#6_name_value_pairs_and_objects" class="nav-link">
+            6 name value pairs and objects
+          </a>
+      </li>
+      <li>
+        <a href="#7_The_Global_Environment_and_the_Global_Object" class="nav-link">7 The Global Environment and the Global Object
+          </a>
+      </li>
+      <li>
+        <a href="#Section_8" class="nav-link">Section 8
+          </a>
+      </li>
+      <li>
+        <a href="#Section_9" class="nav-link">Section 9
+          </a>
+      </li>
+    </ul>
+    <!-- </div> -->
+  </nav>
+  <main class="content" id="main-doc">
+    <h1>II. Execution contexts and lexical environments</h1>
+    <!-- //h2 stays on top until the next section starts and then it is replaced by the next h2 tag -->
+    <section class="main-section" id="5_syntax_parsers_execution_contexts_lexical_environments">
+      <header>
         <h2>5 syntax parsers execution contexts lexical environments</h2>
-        </header>
+      </header>
+      <article>
         <p><strong>A syntax parser:</strong>
           <ul>
             <li>reads your code (character by character)</li>
@@ -45,17 +58,17 @@
           </ul>
         </p>
 
-        <p><strong>lexical environments:</strong> exists in programming languages in which where you write something is
-          important.</p>
+        <p><strong>lexical environments:</strong> exists in programming languages in which where you write something is important.
+        </p>
 
-        <p><strong>execution contexts:</strong> manages which lexical environment is currently running. It can contain
-          things beyond what is written in your code.</p>
-      </section>
+        <p><strong>execution contexts:</strong> manages which lexical environment is currently running. It can contain things beyond what is written in your code.</p>
+      </article>
+    </section>
 
-      <section class="main-section" id="6_name_value_pairs_and_objects">
-          <header>
-        <h2>6 name value pairs and objects</h2>
-        </header>
+    <section class="main-section" id="6_name_value_pairs_and_objects">
+      <header>6 name value pairs and objects
+      </header>
+      <article>
 
         <p><strong>Name/value pairs</strong> - A name which maps to a unique value</p>
 
@@ -72,17 +85,14 @@
     }
   </code>
         <p><em>Address</em> is the name. The <em>value</em> is a collection of other name/value pairs.</p>
-      </section>
+      </article>
+    </section>
 
-
-      <section class="main-section" id="7_The_Global_Environment_and_the_Global_Object">
-          <header>
-        <h2>7 The Global Environment and the Global Object</h2>
-        </header>
-
-        <p>JavaScript code runs inside an execution context. Lets look at an execution context being created and run.
-          Normally more than 1 execution context runs during execution of a JavaScript program. The base context is
-          `Global`. It is accessible everywhere to everything in your program./p>
+    <section class="main-section" id="7_The_Global_Environment_and_the_Global_Object">
+      <header>7 The Global Environment and the Global Object</header>
+      <article>
+        <p>JavaScript code runs inside an execution context. Lets look at an execution context being created and run. Normally more than 1 execution context runs during execution of a JavaScript program. The base context is `Global`. It is accessible everywhere
+          to everything in your program./p>
 
           <p>The Global execution context creates 2 things for you:
             <ul>
@@ -107,7 +117,7 @@
           <p>Even with an empty app.js file an execution context is created. At the global level
             <pre>this</pre> refers to the window object. In JavaScript 'global' means not inside a function.</p>
 
-            <code>
+          <code>
                 <html>
       
                 <head></head>
@@ -118,18 +128,18 @@
       
                 </html>
               </code>
-
-      </section>
-      <section class="main-section" id="Section_8">
-          <header>
-        <h2>Section 8</h2>
-        </header>
+      </article>
+    </section>
+    <section class="main-section" id="Section_8">
+      <header>Section 8
+      </header>
+      <article>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, rem. Placeat consequuntur eveniet quod illum harum consectetur dolorum nemo distinctio amet nesciunt. Earum, harum asperiores. Quibusdam expedita modi iure recusandae?
-          Commodi, suscipit. Illo delectus possimus, vitae esse animi, ratione eaque voluptate maiores saepe praesentium eius rerum veritatis in inventore consectetur beatae obcaecati eum porro provident dolorem rem? Nesciunt, delectus. Voluptates.
-          Id, debitis? Beatae amet animi numquam esse perferendis commodi vitae quaerat optio obcaecati quas accusantium incidunt cum, quae, consequuntur necessitatibus minima. Ad fugiat doloremque pariatur sit itaque optio consequatur sint.
-          Molestiae sapiente quaerat, autem repudiandae molestias consequuntur voluptates. Harum veritatis voluptatem est non similique natus quidem labore dolor, nisi unde eaque itaque excepturi quibusdam facere pariatur. Nesciunt hic non nulla.
-          Voluptatum, ea perferendis delectus asperiores vitae excepturi modi blanditiis recusandae ratione nemo aspernatur, magni veritatis consequatur. Eaque consequuntur sapiente hic, quos assumenda accusamus incidunt corrupti perspiciatis soluta illum molestias voluptates!
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, rem. Placeat consequuntur eveniet quod illum harum consectetur dolorum nemo distinctio amet nesciunt. Earum, harum asperiores. Quibusdam expedita modi iure recusandae? Commodi, suscipit.
+          Illo delectus possimus, vitae esse animi, ratione eaque voluptate maiores saepe praesentium eius rerum veritatis in inventore consectetur beatae obcaecati eum porro provident dolorem rem? Nesciunt, delectus. Voluptates. Id, debitis? Beatae amet
+          animi numquam esse perferendis commodi vitae quaerat optio obcaecati quas accusantium incidunt cum, quae, consequuntur necessitatibus minima. Ad fugiat doloremque pariatur sit itaque optio consequatur sint. Molestiae sapiente quaerat, autem
+          repudiandae molestias consequuntur voluptates. Harum veritatis voluptatem est non similique natus quidem labore dolor, nisi unde eaque itaque excepturi quibusdam facere pariatur. Nesciunt hic non nulla. Voluptatum, ea perferendis delectus asperiores
+          vitae excepturi modi blanditiis recusandae ratione nemo aspernatur, magni veritatis consequatur. Eaque consequuntur sapiente hic, quos assumenda accusamus incidunt corrupti perspiciatis soluta illum molestias voluptates!
         </p>
 
         <code>
@@ -143,29 +153,30 @@
   
             </html>
           </code>
-      </section>
-      <section class="main-section" id="Section_9">
-          <header>
-          <h2>Section 9</h2>
-          </header>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, rem. Placeat consequuntur eveniet quod illum harum consectetur dolorum nemo distinctio amet nesciunt. Earum, harum asperiores. Quibusdam expedita modi iure recusandae?
-            Commodi, suscipit. Illo delectus possimus, vitae esse animi, ratione eaque voluptate maiores saepe praesentium eius rerum veritatis in inventore consectetur beatae obcaecati eum porro provident dolorem rem? Nesciunt, delectus. Voluptates.
-            Id, debitis? Beatae amet animi numquam esse perferendis commodi vitae quaerat optio obcaecati quas accusantium incidunt cum, quae, consequuntur necessitatibus minima. Ad fugiat doloremque pariatur sit itaque optio consequatur sint.
-            Molestiae sapiente quaerat, autem repudiandae molestias consequuntur voluptates. Harum veritatis voluptatem est non similique natus quidem labore dolor, nisi unde eaque itaque excepturi quibusdam facere pariatur. Nesciunt hic non nulla.
-            Voluptatum, ea perferendis delectus asperiores vitae excepturi modi blanditiis recusandae ratione nemo aspernatur, magni veritatis consequatur. Eaque consequuntur sapiente hic, quos assumenda accusamus incidunt corrupti perspiciatis soluta illum molestias voluptates!
-          </p>
+      </article>
+    </section>
+    <section class="main-section" id="Section_9">
+      <header>Section 9
+      </header>
+      <article>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, rem. Placeat consequuntur eveniet quod illum harum consectetur dolorum nemo distinctio amet nesciunt. Earum, harum asperiores. Quibusdam expedita modi iure recusandae? Commodi, suscipit.
+          Illo delectus possimus, vitae esse animi, ratione eaque voluptate maiores saepe praesentium eius rerum veritatis in inventore consectetur beatae obcaecati eum porro provident dolorem rem? Nesciunt, delectus. Voluptates. Id, debitis? Beatae amet
+          animi numquam esse perferendis commodi vitae quaerat optio obcaecati quas accusantium incidunt cum, quae, consequuntur necessitatibus minima. Ad fugiat doloremque pariatur sit itaque optio consequatur sint. Molestiae sapiente quaerat, autem
+          repudiandae molestias consequuntur voluptates. Harum veritatis voluptatem est non similique natus quidem labore dolor, nisi unde eaque itaque excepturi quibusdam facere pariatur. Nesciunt hic non nulla. Voluptatum, ea perferendis delectus asperiores
+          vitae excepturi modi blanditiis recusandae ratione nemo aspernatur, magni veritatis consequatur. Eaque consequuntur sapiente hic, quos assumenda accusamus incidunt corrupti perspiciatis soluta illum molestias voluptates!
+        </p>
 
-          <p><strong>A syntax parser:</strong>
-            <ul>
-              <li>1</li>
-              <li>2</li>
-              <li>3</li>
-              
-            </ul>
-          </p>
+        <p><strong>A syntax parser:</strong>
+          <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
 
-          <code>
+          </ul>
+        </p>
+
+        <code>
               <html>
     
               <head></head>
@@ -176,26 +187,24 @@
     
               </html>
             </code>
-        </section>
+      </article>
+    </section>
 
-    </article>
   </main>
-</div>
 
+  <script src="./script.js"></script>
+
+  <!-- 
+  
+  Hello Camper!
+  
+  For now, the test suite only works in Chrome! Please read the README below in the JS Editor before beginning. Feel free to delete this message once you have read it. Good luck and Happy Coding! 
+  
+  - The freeCodeCamp Team 
+  
+  -->
+
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
 
 </html>
-<script src="./script.js"></script>
-
-
-<!-- 
-
-Hello Camper!
-
-For now, the test suite only works in Chrome! Please read the README below in the JS Editor before beginning. Feel free to delete this message once you have read it. Good luck and Happy Coding! 
-
-- The freeCodeCamp Team 
-
--->
-
-<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>

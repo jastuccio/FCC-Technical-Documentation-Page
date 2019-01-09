@@ -25,7 +25,9 @@ h4 {
 }
 
 a {
+  @extend %heading;
   color: $color-black;
+  font-size: 1.5rem;
 }
 
 p {

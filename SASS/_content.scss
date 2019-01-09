@@ -1,0 +1,52 @@
+.content {
+  grid-area: content;
+  max-width: 1000px;
+  margin: 1rem 3rem;
+
+  @include respond(phone) {
+    margin: 30rem 5vw;
+  }
+
+  ul {
+    list-style-type: "-";
+  }
+
+  li {
+    margin-left: 2rem;
+  }
+
+  h1 {
+    margin: 1rem 0 2rem;
+  }
+
+  h2 {
+    font-size: 1.25rem;
+    grid-column: 2 / -2;
+  }
+
+  h3 {
+    font-size: 1.8rem;
+    grid-column: 2 / -2;
+  }
+
+  p,
+  ul,
+  pre,
+  section {
+    grid-column: 3 / -2;
+  }
+
+  p {
+    color: #4d4e53;
+  }
+}
+
+// @media (min-width: 700px) {
+//   #wrapper {
+//     grid-template-columns: 300px auto;
+//   }
+
+//   nav {
+//     height: 100vh;
+//   }
+// }

@@ -1,0 +1,133 @@
+/*
+0 - 600px:    Phone
+
+600 -900px:   Tablet Portrait
+900- 1200px:  Tablet Landscape
+
+[1200 - 1800] our normal styles (desktop first)
+
+1800px+:      Big Desktop
+
+$breakpoint argument choices:
+- phone
+- tab-port
+- tab-land
+- big-desktop
+*/
+h1, h2, h3, h4, a {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+  line-height: 1.2; }
+
+h1 {
+  font-size: 2rem; }
+
+h2 {
+  font-size: 1.5rem;
+  font-style: italic; }
+
+h3 {
+  font-size: 1.25rem;
+  text-transform: uppercase; }
+
+h4 {
+  font-size: 1.9rem; }
+
+a {
+  color: #1d1d1d;
+  font-size: 1.5rem; }
+
+p {
+  font-size: 1rem; }
+
+.btn {
+  background-color: #fdfdfd;
+  color: #1d1d1d;
+  border: none;
+  border-radius: 0;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  padding: 1.8rem 3rem;
+  cursor: pointer; }
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+  @media only screen and (max-width: 37.5em) {
+    html {
+      font-size: 75%; } }
+  @media only screen and (max-width: 56.25em) {
+    html {
+      font-size: 75%; } }
+  @media only screen and (max-width: 75em) {
+    html {
+      font-size: 100%; } }
+
+body {
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: 25vw 1fr;
+  grid-template-areas: "nav content";
+  margin: 0;
+  font-family: "Nunito", sans-serif;
+  background-color: #fdfdfd;
+  color: #1d1d1d;
+  font-weight: 300;
+  line-height: 1.6; }
+
+a {
+  text-decoration: none; }
+
+.nav {
+  position: fixed;
+  grid-area: nav;
+  border-right: gray solid 2px;
+  height: 100vh;
+  max-width: 25vw; }
+  .nav header {
+    border-bottom: 3px solid #999; }
+  .nav h2 {
+    background-color: #ff7730;
+    color: #fdfdfd;
+    text-align: center;
+    padding: 1rem 0; }
+  .nav h3 {
+    max-width: 25vw; }
+  .nav li {
+    border-bottom: 1px solid #999;
+    padding: 0.75rem;
+    margin: 0; }
+
+.content {
+  grid-area: content;
+  max-width: 1000px;
+  margin: 1rem 3rem; }
+  @media only screen and (max-width: 37.5em) {
+    .content {
+      margin: 30rem 5vw; } }
+  .content ul {
+    list-style-type: "-"; }
+  .content li {
+    margin-left: 2rem; }
+  .content h1 {
+    margin: 1rem 0 2rem; }
+  .content h2 {
+    font-size: 1.25rem;
+    grid-column: 2 / -2; }
+  .content h3 {
+    font-size: 1.8rem;
+    grid-column: 2 / -2; }
+  .content p,
+  .content ul,
+  .content pre,
+  .content section {
+    grid-column: 3 / -2; }
+  .content p {
+    color: #4d4e53; }
