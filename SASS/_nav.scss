@@ -1,16 +1,13 @@
 .nav {
-  position: fixed;
   grid-area: nav;
-  border-right: gray solid 2px;
+  // border-right: gray solid 2px;
   height: 100vh;
-  max-width: 25vw;
-
-  // a {
-  //   display: block;
-  // }
+  max-width: $side-bar-width;
 
   header {
     border-bottom: 3px solid $color-grey-light;
+    width: $side-bar-width;
+    position: fixed;
   }
 
   h2 {
@@ -18,10 +15,6 @@
     color: $color-white;
     text-align: center;
     padding: 1rem 0;
-  }
-
-  h3 {
-    max-width: $side-bar-width;
   }
 
   li {

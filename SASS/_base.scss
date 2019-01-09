@@ -38,6 +38,10 @@ body {
   color: $color-black;
   font-weight: 300;
   line-height: 1.6;
+
+  @include respond(phone) {
+    grid-template-columns: 1fr;
+  }
 }
 
 a {
