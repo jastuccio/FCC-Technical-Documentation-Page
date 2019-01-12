@@ -1,13 +1,13 @@
 .nav {
   grid-area: nav;
-  // border-right: gray solid 2px;
+  border-right: gray solid 3px;
   height: 100vh;
-  max-width: $side-bar-width;
+  width: $side-bar-width;
+  position: fixed;
 
   header {
     border-bottom: 3px solid $color-grey-light;
-    width: $side-bar-width;
-    position: fixed;
+    max-width: calc(#{$side-bar-width} - 3px);
   }
 
   h2 {
