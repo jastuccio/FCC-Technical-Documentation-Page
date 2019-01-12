@@ -1,8 +1,12 @@
 //COLORS
-$color-primary: #55c57a;
 
-$color-secondary-light: #ffb900;
-$color-secondary: #ff7730;
+// "mathmagiker" inspired color theme
+$color-primary: #e37222;
+$color-primary-light: #eeaa7b;
+
+// $color-secondary: #07889b; original teal
+$color-secondary: #065f6d; // new darker teal
+$color-secondary-light: #66b9bf;
 
 $color-grey-light: #999;
 $color-grey-dark: #333;
@@ -17,6 +21,6 @@ $font-primary: "Nunito", sans-serif;
 $font-display: "Josefin Sans", sans-serif;
 
 //border
-$border-bottom: 1px solid $color-grey-light;
-
+$border-color: $color-secondary-light;
+$border-bottom: 1px solid #{$border-color};
 $side-bar-width: 25vw;
